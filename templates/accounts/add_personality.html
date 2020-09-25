@@ -1,0 +1,18 @@
+{% extends 'main.html' %}
+{% load bootstrap4 %}
+
+
+
+{% block body %}
+
+<div class= "container"> 
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            {% bootstrap_form form %}
+                {% buttons %}                                    
+                    <button class="btn purple-gradient" type="submit">Add Personality</button>
+                {% endbuttons %}
+        </form>
+</div>
+
+{% endblock body %}

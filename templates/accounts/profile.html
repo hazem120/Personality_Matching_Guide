@@ -1,0 +1,99 @@
+{% extends 'main.html' %} 
+{% load bootstrap4 %}
+
+
+
+{% block body %}
+<div >
+    <div class="container"> 
+        <div class="row" style="margin: auto; display: flex; justify-content: center; ">
+            <div class="col-md-8" style="display: flex; justify-content: center;"><h1 style="color: blueviolet;" > {{profile.user.username}} </h1></div>
+          </div>
+    </div>
+    <hr>
+    <div class="container" >
+
+
+        <div class="row" style="margin-left: 10px;" > 
+            <h3> <strong> age :  <button  class="btn btn-outline-secondary waves-effect"> {{profile.age}} </button>
+            </strong> </h3>
+        </div>
+
+        <div class="row" style="margin-left: 10px;" > 
+            <h3> <strong> name in  searchbar :  <button  class="btn btn-outline-secondary waves-effect"> {{profile.name}} </button>
+            </strong> </h3>
+        </div>
+        
+        <div class="row" style="margin-left: 10px;" > 
+            <h3> <strong> color :  <button  class="btn btn-outline-secondary waves-effect"> {{profile.color}} </button>
+            </strong> </h3>
+        </div>
+
+        <div class="row" style="margin-left: 10px;" > 
+            <h3> <strong> subject :  <button  class="btn btn-outline-secondary waves-effect"> {{profile.subject}} </button>
+            </strong> </h3>
+        </div>
+
+
+        <div class="row" style="margin-left: 10px;" > 
+            <h3> <strong> fruite :  <button  class="btn btn-outline-secondary waves-effect"> {{profile.fruite}} </button>
+            </strong> </h3>
+        </div>
+
+
+
+        <div class="row" style="margin-left: 10px;" > 
+            <h3> <strong> movie :  <button  class="btn btn-outline-secondary waves-effect"> {{profile.movie}} </button>
+            </strong> </h3>
+        </div>
+
+
+        <div class="row" style="margin-left: 10px;" > 
+            <h3> <strong> hobby :  <button  class="btn btn-outline-secondary waves-effect"> {{profile.hobby}} </button>
+            </strong> </h3>
+        </div>
+
+
+        
+        <div class="row" style="margin-left: 10px;" > 
+            <h3> <strong> team :  <button  class="btn btn-outline-secondary waves-effect"> {{profile.team}} </button>
+            </strong> </h3>
+        </div>
+
+
+        
+        <div class="row" style="margin-left: 10px;" > 
+            <h3> <strong> social :  <button  class="btn btn-outline-secondary waves-effect"> {{profile.social}} </button>
+            </strong> </h3>
+        </div>
+        <br> 
+
+
+        <div class="row" style="margin-left: 10px;" > 
+            <h3> <strong> best arab singer :  <button  class="btn btn-outline-secondary waves-effect"> {{profile.singer}} </button>
+            </strong> </h3>
+        </div>
+
+
+        <div class="container"> 
+        <div class="row" style="margin: auto; display: flex; justify-content: center; ">
+            <div class="col-md-8" style="display: flex; justify-content: center;"> <a href=" {% url 'add_personality' %} "> <button type="button" class="btn btn-deep-orange" type="submit" >add or edit your personality</button> </a>
+        </div>
+        </div>
+            
+        <div class="container"> 
+        <div class="row" style="margin: auto; display: flex; justify-content: center; ">
+            <div class="col-md-8" style="display: flex; justify-content: center;">  <button class="btn blue-gradient" >find your twin </button> 
+        </div>
+        </div>
+
+
+    </div>
+       
+    <br>
+    </div>
+</div>
+{% endblock body %}
+
+
+

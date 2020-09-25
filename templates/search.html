@@ -1,0 +1,21 @@
+{% extends 'main.html' %} 
+
+
+{% block body %}
+
+
+
+            
+                {% for personality  in qs %} 
+                    <div class="card border-danger mb-3" style="max-width:22rem; display: flex; align-items: center; margin: auto; text-align: center;" >
+                    <div class="card-body text-danger">
+                        <h4 class="card-title">{{personality.name}}</h4>
+                        <p class="card-text"> age: {{personality.age}} , {{personality.hobby}}......   </p>
+                        <a href="{% url 'personality_details' personality.id %}">    <button class="btn purple-gradient">  {{personality.user.username}}'s profile  </button> </a>
+                    </div>
+                    </div>
+                {% endfor %}
+
+
+
+{% endblock body %}
